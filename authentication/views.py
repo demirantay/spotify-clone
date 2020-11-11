@@ -20,3 +20,15 @@ def signup_page(request):
     }
 
     return render(request, "auth/signup.html", data)
+
+
+def login_page(request):
+    """
+
+    """
+
+    data = {
+
+    }
+
+    return render(request, "auth/login.html", data)

@@ -1,0 +1,60 @@
+{% load static %}
+
+<!doctype html>
+<html>
+  <head>
+    <title>spotify-clone</title>
+
+    <!-- Meta Info -->
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Spotify Clone" />
+    <meta name="description" content="Spotify Clone" />
+    <meta name="author" content="Spotify Clone" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="{% static 'branding/black-logo.png' %}" />
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FONT AWSOME -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- BASE CSS LINKS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/auth/signup.css' %}" />
+
+  </head>
+
+  <body>
+
+    <!-- banner -->
+    <div id="signup-banner">
+        <a href=""><img src="{% static 'branding/black-logo-text.png' %}" /></a>
+        <h1>To continue, log in to Spotify.</h1>
+    </div>
+
+    <!-- signup form -->
+    <form id="signup-form">
+      <label>Email address</label>
+      <input type="text" placeholder="Email" />
+
+      <label>Password</label>
+      <input type="password" placeholder="Password." />
+
+      <input id="signup-submit-btn" type="submit" value="LOG IN" />
+
+    </form>
+
+    <!-- login link -->
+    <p id="redirect-info">Don't have an account? <a href="">Sign up</a>.</p>
+
+  </body>
+</html>
