@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # Authentication App
+    path("auth/", include("authentication.urls")),
 
     # Home App
     path("", include("home.urls")),
