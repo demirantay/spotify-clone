@@ -1,1 +1,99 @@
-index
+{% load static %}
+
+<!doctype html>
+<html>
+  <head>
+    <title>spotify-clone</title>
+
+    <!-- Meta Info -->
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Spotify Clone" />
+    <meta name="description" content="Spotify Clone" />
+    <meta name="author" content="Spotify Clone" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="{% static 'branding/logo.png' %}" />
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FONT AWSOME -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- BASE CSS LINKS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home/index.css' %}" />
+
+  </head>
+
+  <body>
+
+    <!-- top navigation -->
+    <div id="top-navigation">
+      <img src="{% static 'branding/logo-text.png' %}"/>
+      <div id="top-nav-links">
+        <a href="">Log in</a>
+        <a href="">Sign up</a>
+        <a href="">Demo</a>
+      </div>
+    </div>
+
+    <!-- hidden mobile top nav -->
+    <div id="hidden-top-navigation">
+      <img src="{% static 'branding/logo-text.png' %}"/>
+      <button id="hidden_panel_open_button"><span class="fa fa-bars"></span></button>
+    </div>
+
+    <!-- hidden mobile top nav (opened panel) -->
+    <div id="hidden-mobile-nav-panel">
+      <div id="top-nav-links-hidden-panel">
+        <button id="hidden_panel_close_button"><span class="fa fa-close"></span></button>
+        <a href="">Log in</a>
+        <a href="">Sign up</a>
+        <a href="">Demo</a>
+        <img src="{% static 'branding/logo-text.png' %}"/>
+      </div>
+    </div>
+
+    <script>
+
+      let hidden_panel_open_button = document.getElementById("hidden_panel_open_button");
+      let hidden_panel_close_button = document.getElementById("hidden_panel_close_button");
+      let hidden_panel = document.getElementById("hidden-mobile-nav-panel");
+
+      hidden_panel_open_button.onclick = function() {
+        hidden_panel.style.display = "block";
+      }
+
+      hidden_panel_close_button.onclick = function() {
+        hidden_panel.style.display = "none";
+      }
+
+    </script>
+
+
+    <!-- landing panner -->
+    <div id="landing_banner">
+      <div id="banner-text">
+        <h1>Listening is <span>everything</span></h1>
+        <p>Millions of songs and podcasts. No credit card needed.</p>
+        <a href="">DEMO</a>
+        <a href="">GET SPOTIFY CLONE</a>
+      </div>
+    </div>
+
+    <!-- footer info -->
+    <div id="footer-info">
+      <p>This project is coded by <a target="_blank" href="https://github.com/demirantay">@demirantay</a>. You can find the source code <a target="_blank" href="https://github.com/demirantay/spotify-clone">here.</a></p>
+      <p>Spotify is a registered trademark of Spotify Inc. This project is coded only for educational purposes and not for profit. Please do not use this project for any form of plagiarism.</p>
+    </div>
+
+  </body>
+</html>

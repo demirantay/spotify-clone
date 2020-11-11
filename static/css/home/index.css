@@ -1,0 +1,363 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+#top-navigation {
+  border: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+#top-navigation img {
+  float: left;
+  height: 50px;
+  margin-top: 12px;
+  margin-left: 5%;
+}
+
+#top-nav-links {
+  margin-right: 5%;
+}
+
+#top-navigation a {
+  float: right;
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: 400;
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#top-navigation a:hover {
+  color: #1ED760;
+}
+
+
+#hidden-top-navigation {
+  display: none;
+  border: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+#hidden-top-navigation img {
+  float: left;
+  height: 50px;
+  margin-top: 12px;
+  margin-left: 5%;
+}
+
+#hidden-top-navigation button {
+  float: right;
+  color: white;
+  background-color: transparent;
+  border: 0px;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+
+#hidden-top-navigation button:hover {
+  cursor: pointer;
+  color: #1ED760;
+  transition: 0.2s;
+}
+
+#hidden-mobile-nav-panel {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  display: none;
+}
+
+#hidden-mobile-nav-panel button {
+  position: fixed;
+  z-index: 999;
+  top:0;
+  right: 0;
+  color: white;
+  background-color: transparent;
+  border: 0px;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+
+#hidden-mobile-nav-panel button:hover {
+  cursor: pointer;
+  color: #1ED760;
+  transition: 0.2s;
+}
+
+#top-nav-links-hidden-panel {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 40%;
+}
+
+#hidden-mobile-nav-panel a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#hidden-mobile-nav-panel a:hover {
+  color: #1ED760;
+  transition: 0.2s;
+}
+
+#hidden-mobile-nav-panel img {
+  height: 50px;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+
+
+#landing_banner {
+  background-color: #2D46B9;
+  width: 100%;
+  height: 90vh;
+}
+
+#banner-text {
+  text-align: center;
+  padding-top: 80px;
+}
+
+#banner-text h1 {
+  padding: 0px;
+  margin: 0px;
+  color: #1ED760;
+  font-size: 130px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+#banner-text p {
+  margin: 0px;
+  color: #1ED760;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#banner-text a {
+  background-color: #1ED760;
+  color: #2D46B9;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#banner-text a:hover {
+  transition: 0.2s;
+  background-color: white;
+}
+
+#footer-info {
+  border: 0px;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#footer-info p {
+  margin: 0px;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 20px;
+}
+
+#footer-info p a {
+  color: #1ED760;
+  text-decoration: none;
+
+}
+
+#footer-info p a:hover {
+  text-decoration: underline;
+
+}
+
+
+
+
+/* Mobile Small  --------------------------------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  #top-navigation {
+    display: none;
+  }
+
+  #hidden-top-navigation {
+    display: block;
+  }
+
+
+  #landing_banner {
+    background-color: #2D46B9;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #banner-text {
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  #banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  #banner-text p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  #banner-text a {
+    display: block;
+    padding: 15px 25px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+/* Mobile Medium  --------------------------------------------------------- */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  #top-navigation {
+    display: none;
+  }
+
+  #hidden-top-navigation {
+    display: block;
+  }
+
+
+  #landing_banner {
+    background-color: #2D46B9;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #banner-text {
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  #banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  #banner-text p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  #banner-text a {
+    display: block;
+    padding: 15px 25px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+/* Mobile Large - --------------------------------------------------------- */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  #top-navigation {
+    display: none;
+  }
+
+  #hidden-top-navigation {
+    display: block;
+  }
+
+
+  #landing_banner {
+    background-color: #2D46B9;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #banner-text {
+    text-align: center;
+    padding-top: 80px;
+  }
+
+  #banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  #banner-text p {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  #banner-text a {
+    display: block;
+    padding: 15px 25px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+/* Tablet - --------------------------------------------------------------- */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+  #banner-text h1 {
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+
+}
+
+
+/* Laptop ------------------------------------------------------------------ */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* nothing for now */
+}
+
+
+/* Laptop Large -------------------------------------------------------------*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* nothing for now */
+}
+
+
+/* 4K Large Desktop ------------------------------------------------------- */
+@media screen and (min-width: 1441px) {
+
+}
