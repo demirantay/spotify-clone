@@ -1,0 +1,177 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, input, label {
+  font-family: 'Inter', sans-serif;
+}
+
+
+#signup-banner {
+  border: 1px solid transparent;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+#signup-banner h1 {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 40px;
+  font-size: 26px;
+}
+
+#signup-banner a {
+  text-align: center;
+}
+
+#signup-banner a img {
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+}
+
+#signup-form {
+  border: 1px solid transparent;
+  width: 35%;
+  margin: 0 auto;
+}
+
+#signup-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#signup-form input {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+#signup-form input:focus {
+  outline: none;
+  border-color: black;
+}
+
+#signup-submit-btn {
+  width: 80% !important;
+  margin: 0 auto;
+  border-radius: 30px !important;
+  background-color: #1DB954;
+  font-weight: 700;
+  color: white;
+  border: 1px solid #1DB954 !important;
+  margin-top: 30px !important;
+}
+
+#signup-submit-btn:hover {
+  transition: 0.2s;
+  background-color: #1ED760;
+  cursor: pointer;
+}
+
+#redirect-info {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#redirect-info a {
+  color: #1ED760;
+}
+
+
+
+/* Mobile Small  --------------------------------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 320px) {
+
+  #signup-banner {
+    width: 90%;
+  }
+
+  #signup-form {
+    width: 85%;
+    margin-top: 20px;
+  }
+
+  #signup-form input {
+    width: 95%;
+  }
+}
+
+
+/* Mobile Medium  --------------------------------------------------------- */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  #signup-banner {
+    width: 90%;
+  }
+
+  #signup-form {
+    width: 85%;
+    margin-top: 20px;
+  }
+
+  #signup-form input {
+    width: 95%;
+  }
+}
+
+
+/* Mobile Large - --------------------------------------------------------- */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  #signup-banner {
+    width: 90%;
+  }
+
+  #signup-form {
+    width: 85%;
+    margin-top: 20px;
+  }
+
+  #signup-form input {
+    width: 95%;
+  }
+}
+
+
+/* Tablet - --------------------------------------------------------------- */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  #signup-banner {
+    width: 70%;
+  }
+
+  #signup-form {
+    width: 65%;
+    margin-top: 20px;
+  }
+
+  #signup-form input {
+    width: 95%;
+  }
+
+}
+
+
+/* Laptop ------------------------------------------------------------------ */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* nothing for now */
+}
+
+
+/* Laptop Large -------------------------------------------------------------*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* nothing for now */
+}
+
+
+/* 4K Large Desktop ------------------------------------------------------- */
+@media screen and (min-width: 1441px) {
+
+}
