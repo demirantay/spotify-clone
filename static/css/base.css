@@ -340,11 +340,341 @@ green: #1ED760
   margin-right: 20px;
 }
 
+/* ######################### MOBILE ################################# */
+
+/* --------------- mobile bottom nav -------------------- */
+
+#mobile-bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #282828;
+}
+
+#mobile-bottom-navigation a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 32%;
+  color: #B3B3B3;
+}
+
+#mobile-bottom-navigation a:hover {
+  color: white;
+}
+
+#mobile-bottom-navigation a span {
+  display: block;
+  font-size: 9px;
+}
+
+#bottom-nav-icon {
+  font-size: 20px !important;
+  margin-bottom: 2px;
+  margin-top: 7px;
+}
 
 
+/* --------------- mobile small player  -------------------- */
+#playing-song-small-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #282828;
+  z-index: 9;
+  margin-bottom: 50px;
+  border-top: 2px solid #B3B3B3;
+}
+
+#playing-song-small-panel:hover {
+  cursor: pointer;
+}
+
+#mobile-small-player-song-img {
+  background-color: grey;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin-left: 0px;
+  vertical-align: top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../test/test.jpg");
+  background-size: cover;
+}
+
+#mobile-small-player-song-info {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  border: 1px solid transparent;
+}
+
+#mobile-small-player-song-info p {
+  margin: 0px;
+  color: white;
+  font-size: 13px;
+  margin-top: 7px;
+}
+
+#mobile-small-player-song-info a {
+  display: block;
+  margin: 0px;
+  text-decoration: none;
+  color: #B3B3B3;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+#mobile-small-player-operations {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  border: 1px solid transparent;
+  margin-top: 7px;
+}
+
+#mobile-small-player-operations form {
+  display: inline-block;
+}
+
+#mobile-small-player-operations form input {
+  background-color: transparent;
+  font-size: 23px;
+  color: #B3B3B3;
+  border: 0px;
+}
+
+#mobile-small-player-operations button {
+  display: inline-block;
+  background-color: transparent;
+  font-size: 19px;
+  color: #B3B3B3;
+  border: 0px;
+  margin-right: 5px;
+}
+
+/* --------------- mobile big player -------------------- */
+#hidden-playing-song-bigger-panel {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: fixed;
+  z-index: 999;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+
+  display: none;
+}
+
+#song-bigger-panel-top-part {
+  border: 1px solid transparent;
+  width: 85%;
+  margin: 0 auto;
+  height: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#song-bigger-panel-top-part button {
+  background-color: transparent;
+  border: 0px;
+  color: white;
+}
+
+#song-bigger-panel-top-part button:focus {
+  outline: none;
+}
+
+#hidden-song-panel-close-btn {
+  float: left;
+  font-size: 25px;
+  margin-left: 7%;
+}
+
+#mobile-hidden-queue-panel-open-btn {
+  float: right;
+  margin-top: 7px;
+  margin-right: 7%;
+}
+
+#playlist-info {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  margin: 0 auto !important;
+  z-index: 9;
+}
+
+#playlist-info p {
+  margin: 0px;
+  font-size: 10px;
+  color:white;
+}
+
+#artist-name {
+  font-size: 12px !important;
+  color: white;
+}
+
+#song-bigger-panel-album-img {
+  background-color: grey;
+  display: block;
+  height: 250px;
+  width: 85%;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../test/test.jpg");
+  background-size: cover;
+  margin-top: 35px;
+}
+
+#song-bigger-panel-info {
+  border: 1px solid transparent;
+  width: 85%;
+  margin: 0 auto;
+  height: 30px;
+  margin-top: 45px;
+
+}
+
+#song-bigger-panel-info-left {
+  width: 85%;
+  height: auto;
+  border: 1px solid transparent;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#song-bigger-panel-info-left p {
+  color: white;
+  font-size: 14px;
+  margin: 0px;
+}
+
+#song-bigger-panel-info-left a {
+  display: block;
+  margin: 0px;
+  text-decoration: none;
+  color: #B3B3B3;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+#song-bigger-panel-info-right {
+  width: 10%;
+  height: auto;
+  border: 1px solid transparent;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#song-bigger-panel-info-right form {
+
+}
+
+#song-bigger-panel-info-right form input {
+  background-color: transparent;
+  border: 0px;
+  color: #B3B3B3;
+  font-size: 27px;
+}
+
+#song-bigger-panel-bottom-operations {
+  border: 1px solid transparent;
+  width: 85%;
+  margin: 0 auto;
+  height: 30px;
+  margin-top: 20px;
+}
+
+#song-bigger-panel-top-part {
+  width: 100%;
+}
+
+#song-bigger-panel-progress-bar {
+  display: block;
+  height: 4px;
+  background-color: grey;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+#mobile-start-time {
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  font-size: 11px;
+}
+
+#mobile-end-time {
+  color: white;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px;
+  float: right;
+  font-size: 11px;
+}
+
+#song-bigger-panel-bottom-part {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#song-bigger-panel-bottom-part button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: white;
+  font-size: 20px;
+  margin: 0px 8px;
+
+}
+
+#song-bigger-panel-bottom-part button:focus {
+  outline: none;
+}
 
 /* Mobile Small  --------------------------------------------------------- */
 @media screen and (min-width: 0px) and (max-width: 320px) {
+
+  /* ------------------------- left part ------------------------- */
+  #base-left-navigation {
+    display: none;
+  }
+
+  /* ------------------------- right part ------------------------- */
+  #base-right-part {
+    border: 0px solid black;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 100px;
+    margin-left: 0px;
+  }
+
+  /* ------------------------- bottom part ------------------------- */
+  #base-bottom-part {
+    display: none;
+  }
 
 }
 

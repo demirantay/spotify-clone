@@ -117,5 +117,98 @@
       </div>
     </div>
 
+    <!-- ################## MOBILE ################################ -->
+
+
+    <!-- small playing song panel -->
+    <div id="playing-song-small-panel">
+      <div id="mobile-small-player-song-img"></div>
+      <div id="mobile-small-player-song-info">
+        <p>Vice - Main Title Piano Suite</p>
+        <a href="">Nicholas Britelli</a>
+      </div>
+      <div id="mobile-small-player-operations">
+        <form>
+          <input type="submit" value="&#9829;" />
+        </form>
+        <button><span class="fa fa-play"></span></button>
+      </div>
+    </div>
+
+    <!-- main bottom navigation -->
+    <div id="mobile-bottom-navigation">
+      <a href="">
+        <span id="bottom-nav-icon" class="fa fa-home"></span>
+        <span>Home</span>
+      </a>
+      <a href="">
+        <span id="bottom-nav-icon" class="fa fa-search"></span>
+        <span>Search</span>
+      </a>
+      <a href="">
+        <span id="bottom-nav-icon" class="fa fa-book"></span>
+        <span>Your Library</span>
+      </a>
+    </div>
+
+    <!-- hidden bigger playing song panel -->
+    <div id="hidden-playing-song-bigger-panel">
+      <div id="song-bigger-panel-top-part">
+        <button id="hidden-song-panel-close-btn"><span class="fa fa-angle-down"></span></button>
+        <div id="playlist-info">
+          <p>PLAYING FROM</p>
+          <p id="artist-name"><b>Nick Cave</b></p>
+        </div>
+        <button id="mobile-hidden-queue-panel-open-btn"><span class="fa fa-bars"></span></button>
+      </div>
+
+      <div id="song-bigger-panel-album-img"></div>
+
+      <div id="song-bigger-panel-info">
+        <div id="song-bigger-panel-info-left">
+          <p>Into My Arms - 2011 Remastered</p>
+          <a href="">Nick Cave & The Bad Seeds</a>
+        </div>
+        <div id="song-bigger-panel-info-right">
+          <form>
+            <input type="submit" value="&#9829;" />
+          </form>
+        </div>
+      </div>
+
+      <div id="song-bigger-panel-bottom-operations">
+        <div id="song-bigger-panel-top-part">
+          <div id="song-bigger-panel-progress-bar"></div>
+          <p id="mobile-start-time">0:00</p>
+          <p id="mobile-end-time">5:27</p>
+        </div>
+
+        <div id="song-bigger-panel-bottom-part">
+          <button><span class="fa fa-random"></span></button>
+          <button><span class="fa fa-step-backward"></span></button>
+          <button><span id="play-btn" class="fa fa-play-circle"></span></button>
+          <button><span class="fa fa-step-forward"></span></button>
+          <button><span class="fa fa-repeat"></span></button>
+        </div>
+      </div>
+
+      <script>
+        let hidden_song_panel = document.getElementById("hidden-playing-song-bigger-panel");
+        let smaller_song_panel = document.getElementById("playing-song-small-panel");
+        let hidden_song_panel_close_btn = document.getElementById("hidden-song-panel-close-btn");
+
+        smaller_song_panel.onclick = function() {
+          hidden_song_panel.style.display = "block";
+        }
+
+        hidden_song_panel_close_btn.onclick = function() {
+          hidden_song_panel.style.display = "none";
+        }
+
+
+      </script>
+
+    </div>
+
   </body>
 </html>
