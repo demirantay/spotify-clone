@@ -12,8 +12,16 @@ from django.contrib.auth.models import User
 
 def index(request):
     """
-    
+    this is the landing page of the app and handles most of the redirecton
+    when the access control is right. But if no user is registered or logged
+    in the sessions it just returns the basic static landing page.
     """
+    # Deleting any sessions regarding top-tier type of users
+    # session.pop("programmer_username", None)  <-- these are flask change it
+    # session.pop("programmer_logged_in", None) <-- these are flask change it
+    # admin user session pop
+    # admin user session pop
+
 
     data = {
 

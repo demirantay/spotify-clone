@@ -37,30 +37,39 @@
 
     <!-- banner -->
     <div id="signup-banner">
-        <a href=""><img src="{% static 'branding/black-logo-text.png' %}" /></a>
+        <a href="{% url 'index' %}"><img src="{% static 'branding/black-logo-text.png' %}" /></a>
         <h1>Sign up for free to start listening.</h1>
     </div>
 
     <!-- signup form -->
-    <form id="signup-form">
+    {% if invalid_credentials == True %}
+      <p style="color:red; text-align:center;">Invalid Credentials!</p>
+    {% elif credentials_taken == True %}
+      <p style="color:red; text-align:center;">Username or email is already taken!</p>
+    {% elif contains_space_in_credentials == True %}
+      <p style="color:red; text-align:center;">Credentials cannot contain empty spaces!</p>
+    {% endif %}
+
+    <form id="signup-form" method="POST" action="{% url 'signup_page' %}">
+      {% csrf_token %}
       <label>What's your email?</label>
-      <input type="text" placeholder="Enter your email." />
+      <input type="text" placeholder="Enter your email." name="user_email" />
 
       <label>Create a password.</label>
-      <input type="password" placeholder="Create a password." />
+      <input type="password" placeholder="Create a password." name="password" />
 
       <label>Confirm your password.</label>
-      <input type="password" placeholder="Enter your password again." />
+      <input type="password" placeholder="Enter your password again." name="re_entered_passwrod" />
 
       <label>What should we call you?</label>
-      <input type="text" placeholder="Enter a profile name." />
+      <input type="text" placeholder="Enter a profile name." name="username" />
 
-      <input id="signup-submit-btn" type="submit" value="SIGN UP" />
+      <input id="signup-submit-btn" type="submit" value="SIGN UP" name="signup_submit_button" />
 
     </form>
 
     <!-- login link -->
-    <p id="redirect-info">Have an account? <a href="">Log in</a>.</p>
+    <p id="redirect-info">Have an account? <a href="{% url 'login_page' %}">Log in</a>.</p>
 
   </body>
 </html>
