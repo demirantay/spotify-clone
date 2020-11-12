@@ -37,24 +37,29 @@
 
     <!-- banner -->
     <div id="signup-banner">
-        <a href=""><img src="{% static 'branding/black-logo-text.png' %}" /></a>
+        <a href="{% url 'index' %}"><img src="{% static 'branding/black-logo-text.png' %}" /></a>
         <h1>To continue, log in to Spotify.</h1>
     </div>
 
     <!-- signup form -->
-    <form id="signup-form">
-      <label>Email address</label>
-      <input type="text" placeholder="Email" />
+    {% if invalid_credentials == True %}
+      <p style="color:red; text-align:center;">Invalid Credentials!</p>
+    {% endif %}
+
+    <form id="signup-form" method="POST" action="{% url 'login_page' %}">
+      {% csrf_token %}
+      <label>Username</label>
+      <input type="text" placeholder="Username" name="username" />
 
       <label>Password</label>
-      <input type="password" placeholder="Password." />
+      <input type="password" placeholder="Password." name="password" />
 
-      <input id="signup-submit-btn" type="submit" value="LOG IN" />
+      <input id="signup-submit-btn" type="submit" value="LOG IN" name="login_submit_btn" />
 
     </form>
 
     <!-- login link -->
-    <p id="redirect-info">Don't have an account? <a href="">Sign up</a>.</p>
+    <p id="redirect-info">Don't have an account? <a href="{% url 'signup_page' %}">Sign up</a>.</p>
 
   </body>
 </html>

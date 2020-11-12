@@ -28,3 +28,21 @@ def index(request):
     }
 
     return render(request, "home/index.html", data)
+
+
+def home(request):
+    """
+
+    """
+    # Deleting any sessions regarding top-tier type of users
+    # session.pop("programmer_username", None)  <-- these are flask change it
+    # session.pop("programmer_logged_in", None) <-- these are flask change it
+    # admin user session pop
+    # admin user session pop
+
+
+    data = {
+
+    }
+
+    return render(request, "home/home.html", data)

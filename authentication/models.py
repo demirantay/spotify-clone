@@ -23,6 +23,7 @@ class BasicUserProfile(models.Model):
     profile_photo = models.ImageField(
         upload_to="profile_photo/", blank=True, null=True
     )
+    email = models.CharField(max_length=200, blank=True, null=True)
     bio = models.TextField(blank=True, null=True)
     full_name = models.CharField(max_length=100, blank=True, null=True)
 
