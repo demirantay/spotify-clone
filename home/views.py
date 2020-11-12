@@ -8,6 +8,9 @@ from django.core.files import File
 from django.contrib.auth.models import User
 
 # My Module Imports
+from authentication.models import BasicUserProfile
+
+from utils.session_utils import get_current_user, get_current_user_profile
 
 
 def index(request):
@@ -22,6 +25,18 @@ def index(request):
     # admin user session pop
     # admin user session pop
 
+    # Get the current users
+    current_basic_user = get_current_user(request, User, ObjectDoesNotExist)
+
+    current_basic_user_profile = get_current_user_profile(
+        request,
+        User,
+        BasicUserProfile,
+        ObjectDoesNotExist
+    )
+
+    if current_basic_user != None and current_basic_user_profile != None:
+        return HttpResponseRedirect("/home/")
 
     data = {
 

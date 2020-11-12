@@ -134,7 +134,7 @@ def signup_page(request):
                                         request.session["basic_user_username"] = new_user.username
                                         request.session["basic_user_logged_in"] = True
                                         # redirect to welcome page
-                                        return HttpResponseRedirect("/home/")
+                                        return HttpResponseRedirect("/")
                                     else:
                                         invalid_credentials = True
 
@@ -212,3 +212,16 @@ def login_page(request):
     }
 
     return render(request, "auth/login.html", data)
+
+
+def logout(request):
+    """
+    if users visit this page it logs her out.
+    """
+    # Deleting sessions regarding basic users
+    if "basic_user_email" in request.session:
+        del request.session["basic_user_email"]
+        del request.session["basic_user_username"]
+        del request.session["basic_user_logged_in"]
+
+    return HttpResponseRedirect("/")
