@@ -1,0 +1,121 @@
+{% load static %}
+
+<!doctype html>
+<html>
+  <head>
+    <title>spotify-clone</title>
+
+    <!-- Meta Info -->
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Spotify Clone" />
+    <meta name="description" content="Spotify Clone" />
+    <meta name="author" content="Spotify Clone" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="{% static 'branding/black-logo.png' %}" />
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FONT AWSOME -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- BASE CSS LINKS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+
+    {% block css_links %}
+
+    {% endblock %}
+
+  </head>
+
+  <body>
+
+    <!-- Left Navbar -->
+    <div id="base-left-navigation">
+      <a href="" id="logo-link"><img src="{% static 'branding/logo-text.png' %}" /></a>
+      <div id="left-navbar-main-links">
+        <a href="" class="active-main-link"><span class="fa fa-home"></span> Home</a>
+        <a href=""><span class="fa fa-search"></span> Search</a>
+        <a href=""><span class="fa fa-book"></span> Your Library</a>
+      </div>
+      <div id="playlist-links">
+        <h3>PLAYLISTS</h3>
+        <div id="main-playlist-link">
+          <a href=""><span class="fa fa-plus"></span> Create Playlist</a>
+        </div>
+        <div id="main-playlist-link">
+          <a href="" id="liked-songs-main-link"><span class="fa fa-heart"></span> Liked Songs</a>
+        </div>
+      </div>
+      <div id="horizontal-left-nav-line"></div>
+      <div id="playlists-list">
+        <a href="">Country</a>
+        <a href="">Kamanche</a>
+        <a href="">Country</a>
+        <a href="">Kamanche</a>
+        <a href="">Country</a>
+        <a href="">Kamanche</a>
+        <a href="">Country</a>
+        <a href="">Kamanche</a>
+        <a href="">Country</a>
+        <a href="">Kamanche</a>
+      </div>
+    </div>
+
+    <!-- Right Content Part -->
+    <div id="base-right-part">
+      {% block content %}
+
+      {% endblock %}
+    </div>
+
+
+    <!-- Bottom Part -->
+    <div id="base-bottom-part">
+      <!-- left box -->
+      <div id="base-bottom-left-box">
+        <div id="now-playing-img"></div>
+        <div id="now-playing-info">
+          <p>Vice - Main Title Piano Suite</p>
+          <a href="">Nicholas Britelli</a>
+        </div>
+        <form>
+          <input type="submit" value="&#9829;" />
+        </form>
+      </div>
+
+      <!-- middle -->
+      <div id="base-bottom-middle-box">
+        <div id="base-bottom-top-box">
+          <button><span class="fa fa-random"></span></button>
+          <button><span class="fa fa-step-backward"></span></button>
+          <button><span id="play-btn" class="fa fa-play-circle"></span></button>
+          <button><span class="fa fa-step-forward"></span></button>
+          <button><span class="fa fa-repeat"></span></button>
+        </div>
+        <div id="base-bottom-bottom-box">
+          <p>0:00</p>
+          <div id="music-progress-bar"></div>
+          <p>5:26</p>
+        </div>
+      </div>
+
+      <!-- right box -->
+      <div id="base-bottom-right-box">
+        <a href=""><span class="fa fa-bars"></span></a>
+        <p><span class="fa fa-volume-up"></span></p>
+        <div id="sound-bar"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
