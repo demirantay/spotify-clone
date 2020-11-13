@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     # my own apps
     'authentication',
     'home',
+    'artist',
 ]
 
 MIDDLEWARE = [

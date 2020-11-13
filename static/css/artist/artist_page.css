@@ -1,0 +1,83 @@
+
+
+/* --------------------------- top navigation ------------------------------ */
+
+
+
+
+/* -------------------------------- top banner ------------------------------ */
+
+#top-banner {
+  height: 340px;
+  width: 100%;
+  background-color: grey;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../test/test.jpg");
+  background-size: cover;
+}
+
+#top-banner-info {
+  border: 1px solid transparent;
+  width: 50%;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+#top-banner-info h1 {
+  margin: 0px;
+  color: white;
+  font-weight: 800;
+  font-size: 85px;
+}
+
+#top-banner-info p {
+  color: white;
+}
+
+
+/* --------------------------- play button ------------------------------ */
+#play-button {
+  width: 100%;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+#play-button button:hover {
+  transition: 0.2s;
+  color: black;
+  background-color: white;
+  border-color: black;
+  cursor: pointer;
+}
+
+#play-button button {
+  background-color: #1ED760;
+  color: white;
+  border: 1px solid #1ED760;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+#play-button span {
+  font-size: 25px;
+}
+
+/* ------------------------- popular songs ------------------------------ */
+
+
+/* ------------------ featuring the artist ------------------------------ */
+
+
+/* ---------------- albums and their songs ------------------------------ */
+
+
+/* ------------------------ fans also like ------------------------------ */
+
+
+/* -------------------------------- about ------------------------------ */

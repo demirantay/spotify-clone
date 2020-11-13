@@ -1,6 +1,7 @@
 /* palette
 
 green: #1ED760
+black: #040404
 
  */
 
@@ -352,6 +353,7 @@ green: #1ED760
   height: 50px;
   border: 1px solid black;
   background-color: #282828;
+  display: none;
 }
 
 #mobile-bottom-navigation a {
@@ -391,6 +393,7 @@ green: #1ED760
   z-index: 9;
   margin-bottom: 50px;
   border-top: 2px solid #B3B3B3;
+  display: none;
 }
 
 #playing-song-small-panel:hover {
@@ -676,17 +679,96 @@ green: #1ED760
     display: none;
   }
 
+
+  /* --------------- mobile   -------------------- */
+  #playing-song-small-panel {
+    display: block;
+  }
+
+  #mobile-bottom-navigation {
+    display: block;
+  }
+
+
+
 }
 
 
 /* Mobile Medium  --------------------------------------------------------- */
 @media screen and (min-width: 321px) and (max-width: 375px) {
+  /* ------------------------- left part ------------------------- */
+  #base-left-navigation {
+    display: none;
+  }
+
+  /* ------------------------- right part ------------------------- */
+  #base-right-part {
+    border: 0px solid black;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 100px;
+    margin-left: 0px;
+  }
+
+  /* ------------------------- bottom part ------------------------- */
+  #base-bottom-part {
+    display: none;
+  }
+
+
+  /* --------------- mobile   -------------------- */
+  #playing-song-small-panel {
+    display: block;
+  }
+
+  #mobile-bottom-navigation {
+    display: block;
+  }
+
+
 
 }
 
 
 /* Mobile Large - --------------------------------------------------------- */
 @media screen and (min-width: 376px) and (max-width: 425px) {
+  /* ------------------------- left part ------------------------- */
+  #base-left-navigation {
+    display: none;
+  }
+
+  /* ------------------------- right part ------------------------- */
+  #base-right-part {
+    border: 0px solid black;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 100px;
+    margin-left: 0px;
+  }
+
+  /* ------------------------- bottom part ------------------------- */
+  #base-bottom-part {
+    display: none;
+  }
+
+
+  /* --------------- mobile   -------------------- */
+  #playing-song-small-panel {
+    display: block;
+  }
+
+  #mobile-bottom-navigation {
+    display: block;
+  }
+
 }
 
 
