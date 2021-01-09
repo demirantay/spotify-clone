@@ -11,6 +11,9 @@ urlpatterns = [
 
     # Home App
     path("", include("home.urls")),
+
+    # Artists App
+    path("", include("artist.urls")),
 ]
 
 if settings.DEBUG:
