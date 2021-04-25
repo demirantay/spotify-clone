@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     # signup Page
-    path("artist/<str:artist_name>", views.artist_page, name="artist_page"),
+    path("artist/<str:artist_name>/", views.artist_page, name="artist_page"),
 ]

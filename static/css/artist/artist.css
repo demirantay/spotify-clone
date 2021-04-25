@@ -1,15 +1,202 @@
+/* -------------------- Main Banner ---------------- */
+
 #main-banner {
   background-color: grey;
+  margin: 0px;
+  padding-top: 170px;
+  padding-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/../../static/placeholder/forest.jpg/");
+  background-size: cover;
 }
 
 #main-banner p {
   color: white;
+  margin: 0px;
+  font-weight: 300;
+  margin-left: 30px;
+}
+
+#main-banner p span {
+  color: #3498DB;
 }
 
 #main-banner h1 {
   color: white;
+  margin: 0px;
+  font-weight: 800;
+  font-size: 80px;
+  margin-left: 30px;
 }
 
 #main-banner h3 {
   color: white;
+  margin: 0px;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 16px;
 }
+
+/* --------------------- play button ------------------ */
+#follow-play-button-banner {
+
+}
+
+#follow-play-button-banner button {
+  font-size: 23px;
+  background-color: #1ED760;
+  color: white;
+  padding: 18px 23px;
+  border-radius: 50%;
+  border: 1px solid #1ED760;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#follow-play-button-banner button:hover {
+  cursor: pointer;
+}
+
+#follow-play-button-banner button span {
+
+}
+
+
+/* --------------------- popular songs ------------------ */
+#popular-songs-container {
+  margin-bottom: 10px;
+}
+
+#popular-songs-container h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0px;
+  margin-left: 30px;
+}
+
+#popular-song-cell {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#popular-song-cell:hover {
+  background-color: #343128;
+  cursor: pointer;
+}
+
+#popular-song-cell p {
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  font-weight: 300;
+}
+
+#album-img {
+  display: inline-block;
+  background-color: grey;
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/../../static/placeholder/forest.jpg/");
+  background-size: cover;
+}
+
+#popular-song-cell form {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+}
+
+#popular-song-cell form input {
+  background-color: transparent;
+  color: white;
+  border: 1px solid transparent;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#song-lenght {
+  float: right;
+  vertical-align: middle;
+  margin-right: 60px;
+}
+
+#listen-amount {
+  color: lightgrey !important;
+  font-weight: 300;
+  margin-left: 200px;
+}
+
+#song-index {
+  margin-left: 20px;
+}
+
+/* --------------------- fans also like ------------------ */
+#fans-like-container {
+  border: 1px solid transparent;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#fans-like-container h3 {
+  color: white;
+}
+
+#fans-like-cell {
+  border: 1px solid #181818;
+  border-radius: 6px;
+  width: 23%;
+  background-color: #181818;
+  display: inline-block;
+  margin-right: 1%;
+}
+
+#fans-like-cell:hover {
+  transition: 0.2s;
+  background-color: #282828;
+  cursor: pointer;
+}
+
+#fan-also-like-artist-photo {
+  height: 180px;
+  width: 180px;
+  background-color: grey;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/../../static/placeholder/forest.jpg/");
+  background-size: cover;
+}
+
+#fans-like-cell h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#fans-like-cell p {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  margin: 0px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* --------------------- about ------------------ */
