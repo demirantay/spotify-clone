@@ -97,6 +97,10 @@
   font-weight: 300;
 }
 
+#song-info-box {
+  display: inline-block;
+}
+
 #album-img {
   display: inline-block;
   background-color: grey;
@@ -147,10 +151,12 @@
   border: 1px solid transparent;
   width: 95%;
   margin: 0 auto;
+  padding-bottom: 60px;
 }
 
 #fans-like-container h3 {
   color: white;
+
 }
 
 #fans-like-cell {
@@ -199,4 +205,428 @@
   margin-bottom: 20px;
 }
 
-/* --------------------- about ------------------ */
+/* Mobile Small  --------------------------------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  /* -------------------- Main Banner ---------------- */
+
+  #main-banner {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    -webkit-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    -moz-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+  }
+
+  #main-banner p {
+    display: none;
+  }
+
+  #main-banner h1 {
+    font-size: 40px;
+    margin-left: 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #main-banner h3 {
+    margin-left: 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* --------------------- play button ------------------ */
+  #follow-play-button-banner {
+    text-align: center;
+  }
+
+  #follow-play-button-banner button {
+    margin: 0px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+  }
+
+
+  /* --------------------- popular songs ------------------ */
+  #popular-songs-container {
+    margin-bottom: 10px;
+  }
+
+  #popular-songs-container h3 {
+    font-size: 20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  #popular-song-cell {
+    border: 1px solid transparent;
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  #album-img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #popular-song-cell p {
+    display: block;
+    margin: 0px;
+  }
+
+  #song-info-box {
+    display: inline-block !important;
+    border: 1px solid transparent;
+    width: 60%;
+    vertical-align: middle;
+  }
+
+  #popular-song-cell form {
+    display: none;
+  }
+
+  #song-lenght {
+    display: none !important;
+  }
+
+  #listen-amount {
+    margin-left: 0px;
+    margin: 0px;
+    font-size: 13px;
+  }
+
+  #song-index {
+    margin-left: 10px;
+    display: inline-block !important;
+  }
+
+  /* --------------------- fans also like ------------------ */
+  #fans-like-container {
+    width: 95%;
+    height: 300px !important;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+  }
+
+  #fans-like-container h3 {
+    text-align: center;
+  }
+
+  #fans-like-cell {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  #fan-also-like-artist-photo {
+    height: 140px;
+    width: 140px;
+    margin-top: 10px;
+  }
+
+  #fans-like-cell h3 {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  #fans-like-cell p {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+}
+
+
+/* Mobile Medium  --------------------------------------------------------- */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  /* -------------------- Main Banner ---------------- */
+
+  #main-banner {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    -webkit-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    -moz-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+  }
+
+  #main-banner p {
+    display: none;
+  }
+
+  #main-banner h1 {
+    font-size: 40px;
+    margin-left: 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #main-banner h3 {
+    margin-left: 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* --------------------- play button ------------------ */
+  #follow-play-button-banner {
+    text-align: center;
+  }
+
+  #follow-play-button-banner button {
+    margin: 0px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+  }
+
+
+  /* --------------------- popular songs ------------------ */
+  #popular-songs-container {
+    margin-bottom: 10px;
+  }
+
+  #popular-songs-container h3 {
+    font-size: 20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  #popular-song-cell {
+    border: 1px solid transparent;
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  #album-img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #popular-song-cell p {
+    display: block;
+    margin: 0px;
+  }
+
+  #song-info-box {
+    display: inline-block !important;
+    border: 1px solid transparent;
+    width: 60%;
+    vertical-align: middle;
+  }
+
+  #popular-song-cell form {
+    display: none;
+  }
+
+  #song-lenght {
+    display: none !important;
+  }
+
+  #listen-amount {
+    margin-left: 0px;
+    margin: 0px;
+    font-size: 13px;
+  }
+
+  #song-index {
+    margin-left: 10px;
+    display: inline-block !important;
+  }
+
+  /* --------------------- fans also like ------------------ */
+  #fans-like-container {
+    width: 95%;
+    height: 300px !important;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+  }
+
+  #fans-like-container h3 {
+    text-align: center;
+  }
+
+  #fans-like-cell {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  #fan-also-like-artist-photo {
+    height: 140px;
+    width: 140px;
+    margin-top: 10px;
+  }
+
+  #fans-like-cell h3 {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  #fans-like-cell p {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+}
+
+
+/* Mobile Large - --------------------------------------------------------- */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  /* -------------------- Main Banner ---------------- */
+
+  #main-banner {
+    padding-top: 140px;
+    padding-bottom: 60px;
+    -webkit-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    -moz-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+  }
+
+  #main-banner p {
+    display: none;
+  }
+
+  #main-banner h1 {
+    font-size: 40px;
+    margin-left: 0px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #main-banner h3 {
+    margin-left: 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* --------------------- play button ------------------ */
+  #follow-play-button-banner {
+    text-align: center;
+  }
+
+  #follow-play-button-banner button {
+    margin: 0px;
+    margin-top: -50px;
+    margin-bottom: 30px;
+  }
+
+
+  /* --------------------- popular songs ------------------ */
+  #popular-songs-container {
+    margin-bottom: 10px;
+  }
+
+  #popular-songs-container h3 {
+    font-size: 20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  #popular-song-cell {
+    border: 1px solid transparent;
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  #album-img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #popular-song-cell p {
+    display: block;
+    margin: 0px;
+  }
+
+  #song-info-box {
+    display: inline-block !important;
+    border: 1px solid transparent;
+    width: 60%;
+    vertical-align: middle;
+  }
+
+  #popular-song-cell form {
+    display: none;
+  }
+
+  #song-lenght {
+    display: none !important;
+  }
+
+  #listen-amount {
+    margin-left: 0px;
+    margin: 0px;
+    font-size: 13px;
+  }
+
+  #song-index {
+    margin-left: 10px;
+    display: inline-block !important;
+  }
+
+  /* --------------------- fans also like ------------------ */
+  #fans-like-container {
+    width: 95%;
+    height: 300px !important;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+  }
+
+  #fans-like-container h3 {
+    text-align: center;
+  }
+
+  #fans-like-cell {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  #fan-also-like-artist-photo {
+    height: 140px;
+    width: 140px;
+    margin-top: 10px;
+  }
+
+  #fans-like-cell h3 {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  #fans-like-cell p {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+}
+
+
+/* Tablet - --------------------------------------------------------------- */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+
+}
+
+
+/* Laptop ------------------------------------------------------------------ */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* nothing for now */
+}
+
+
+/* Laptop Large -------------------------------------------------------------*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* nothing for now */
+}
+
+
+/* 4K Large Desktop ------------------------------------------------------- */
+@media screen and (min-width: 1441px) {
+
+}

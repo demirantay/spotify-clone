@@ -684,12 +684,55 @@ green: #1ED760
 
 /* Mobile Medium  --------------------------------------------------------- */
 @media screen and (min-width: 321px) and (max-width: 375px) {
+  /* ------------------------- left part ------------------------- */
+  #base-left-navigation {
+    display: none;
+  }
 
+  /* ------------------------- right part ------------------------- */
+  #base-right-part {
+    border: 0px solid black;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 100px;
+    margin-left: 0px;
+  }
+
+  /* ------------------------- bottom part ------------------------- */
+  #base-bottom-part {
+    display: none;
+  }
 }
 
 
 /* Mobile Large - --------------------------------------------------------- */
 @media screen and (min-width: 376px) and (max-width: 425px) {
+  /* ------------------------- left part ------------------------- */
+  #base-left-navigation {
+    display: none;
+  }
+
+  /* ------------------------- right part ------------------------- */
+  #base-right-part {
+    border: 0px solid black;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 100px;
+    margin-left: 0px;
+  }
+
+  /* ------------------------- bottom part ------------------------- */
+  #base-bottom-part {
+    display: none;
+  }
 }
 
 
