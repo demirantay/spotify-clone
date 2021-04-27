@@ -1,0 +1,582 @@
+/* --------------------- top banner ------------------ */
+
+#top-banner {
+  width: 100%;
+  height: 330px;
+
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  -webkit-box-shadow: 0px 10px 42px -21px rgba(142,45,226,1);
+  -moz-box-shadow: 0px 10px 42px -21px rgba(142,45,226,1);
+  box-shadow: 0px 10px 42px -21px rgba(142,45,226,1);
+
+  opacity: 0.8;
+
+
+}
+
+#playlist-square {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 100px;
+  margin-left: 30px;
+
+  background: #4568DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#playlist-square span {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  margin-top: 70px;
+}
+
+#right-side-info-box {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+#right-side-info-box p {
+  color: white;
+  margin: 0px;
+}
+
+#right-side-info-box h1 {
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+  margin: 0px;
+}
+
+#right-side-profile-info {
+
+}
+
+#right-side-profile-info a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+#right-side-profile-info a:hover {
+  text-decoration: underline;
+}
+
+#right-side-profile-info p span {
+  color: white;
+  font-size: 8px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#right-side-profile-info p {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  color: lightgrey;
+}
+
+#profile-photo {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: grey;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/../../static/placeholder/forest.jpg/");
+  background-size: cover;
+}
+
+
+/* --------------------- play button ------------------ */
+#play-button-div {
+
+}
+
+#play-button-div button {
+  font-size: 23px;
+  background-color: #1ED760;
+  color: white;
+  padding: 18px 23px;
+  border-radius: 50%;
+  border: 1px solid #1ED760;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#play-button-div button:hover {
+  cursor: pointer;
+}
+
+
+/* --------------------- header info part ------------------ */
+#song-header-info {
+  color: #A1A0A3;
+  border-bottom: 1px solid #2F2C39;
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#song-header-info p {
+  color: #A1A0A3;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+#song-header-info-col-1 {
+  width: 4%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#song-header-info-col-2 {
+  width: 34%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#song-header-info-col-3 {
+  width: 24%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#song-header-info-col-4 {
+  width: 24%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#song-header-info-col-5 {
+  width: 9%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* --------------------- song cell list ------------------ */
+#song-cell-container {
+  margin-bottom: 30px;
+}
+
+#song-cell {
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+#song-cell:hover {
+  cursor: pointer;
+  background-color: #2A2A2A;
+  transition: 0.2s;
+}
+
+#song-cell p {
+  color: #A1A0A3;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+#song-cell-col-1 {
+  width: 4%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#song-cell-album-cover {
+  height: 30px;
+  width: 30px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/../../static/placeholder/forest.jpg/");
+  background-size: cover;
+
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#song-cell-col-2-info {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#song-cell-col-2 p {
+  margin: 0px !important;
+}
+
+#song-cell-title {
+  color: white !important;
+  font-weight: 500 !important;
+
+}
+
+#song-cell-artist {
+  font-size: 12px !important;
+}
+
+#song-cell-col-2 {
+  width: 34%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#song-cell-col-3 {
+  width: 24%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#song-cell-col-4 {
+  width: 24%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#song-cell-col-5 {
+  width: 9%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* Mobile Small  --------------------------------------------------------- */
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  /* --------------------- top banner ------------------ */
+
+  #top-banner {
+    width: 100%;
+    height: 130px;
+
+    -webkit-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    -moz-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+
+    z-index: 9 !important;
+  }
+
+  #playlist-square {
+    display: none;
+  }
+
+  #right-side-info-box {
+    display: block;
+    padding-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  #right-side-info-box p {
+    display: none;
+  }
+
+  #right-side-info-box h1 {
+    font-size: 25px;
+  }
+
+  #right-side-profile-info {
+    display: none;
+  }
+
+  /* --------------------- play button ------------------ */
+
+  #play-button-div {
+    display: none;
+  }
+
+
+  /* --------------------- header info part ------------------ */
+  #song-header-info {
+    display: none;
+  }
+
+  /* --------------------- song cell list ------------------ */
+  #song-cell-container {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  #song-cell {
+    width: 88%;
+  }
+
+  #song-cell p {
+    font-size: 16px;
+  }
+
+  #song-cell-col-1 {
+    display: none;
+  }
+
+  #song-cell-album-cover {
+    height: 40px;
+    width: 40px;
+  }
+
+  #song-cell-artist {
+    font-size: 14px !important;
+  }
+
+  #song-cell-col-2 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #song-cell-col-3 {
+    display: none;
+  }
+
+  #song-cell-col-4 {
+    display: none;
+  }
+
+  #song-cell-col-5 {
+    display: none;
+  }
+
+}
+
+
+/* Mobile Medium  --------------------------------------------------------- */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  /* --------------------- top banner ------------------ */
+
+  #top-banner {
+    width: 100%;
+    height: 130px;
+
+    -webkit-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    -moz-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+
+    z-index: 9 !important;
+  }
+
+  #playlist-square {
+    display: none;
+  }
+
+  #right-side-info-box {
+    display: block;
+    padding-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  #right-side-info-box p {
+    display: none;
+  }
+
+  #right-side-info-box h1 {
+    font-size: 25px;
+  }
+
+  #right-side-profile-info {
+    display: none;
+  }
+
+  /* --------------------- play button ------------------ */
+
+  #play-button-div {
+    display: none;
+  }
+
+
+  /* --------------------- header info part ------------------ */
+  #song-header-info {
+    display: none;
+  }
+
+  /* --------------------- song cell list ------------------ */
+  #song-cell-container {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  #song-cell {
+    width: 88%;
+  }
+
+  #song-cell p {
+    font-size: 16px;
+  }
+
+  #song-cell-col-1 {
+    display: none;
+  }
+
+  #song-cell-album-cover {
+    height: 40px;
+    width: 40px;
+  }
+
+  #song-cell-artist {
+    font-size: 14px !important;
+  }
+
+  #song-cell-col-2 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #song-cell-col-3 {
+    display: none;
+  }
+
+  #song-cell-col-4 {
+    display: none;
+  }
+
+  #song-cell-col-5 {
+    display: none;
+  }
+}
+
+
+/* Mobile Large - --------------------------------------------------------- */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+
+  /* --------------------- top banner ------------------ */
+
+  #top-banner {
+    width: 100%;
+    height: 130px;
+
+    -webkit-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    -moz-box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+    box-shadow: inset -1px -31px 19px -9px rgba(18,18,18,1);
+
+    z-index: 9 !important;
+  }
+
+  #playlist-square {
+    display: none;
+  }
+
+  #right-side-info-box {
+    display: block;
+    padding-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+    margin: 0px;
+  }
+
+  #right-side-info-box p {
+    display: none;
+  }
+
+  #right-side-info-box h1 {
+    font-size: 25px;
+  }
+
+  #right-side-profile-info {
+    display: none;
+  }
+
+  /* --------------------- play button ------------------ */
+
+  #play-button-div {
+    display: none;
+  }
+
+
+  /* --------------------- header info part ------------------ */
+  #song-header-info {
+    display: none;
+  }
+
+  /* --------------------- song cell list ------------------ */
+  #song-cell-container {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  #song-cell {
+    width: 88%;
+  }
+
+  #song-cell p {
+    font-size: 16px;
+  }
+
+  #song-cell-col-1 {
+    display: none;
+  }
+
+  #song-cell-album-cover {
+    height: 40px;
+    width: 40px;
+  }
+
+  #song-cell-artist {
+    font-size: 14px !important;
+  }
+
+  #song-cell-col-2 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #song-cell-col-3 {
+    display: none;
+  }
+
+  #song-cell-col-4 {
+    display: none;
+  }
+
+  #song-cell-col-5 {
+    display: none;
+  }
+
+}
+
+
+/* Tablet - --------------------------------------------------------------- */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+
+}
+
+
+/* Laptop ------------------------------------------------------------------ */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* nothing for now */
+}
+
+
+/* Laptop Large -------------------------------------------------------------*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* nothing for now */
+}
+
+
+/* 4K Large Desktop ------------------------------------------------------- */
+@media screen and (min-width: 1441px) {
+
+}
